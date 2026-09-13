@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce a los gatitos que este proyecto alimenta. Transparencia total, cada peso va directo a comida, vacunas y esterilización.">
+  <meta name="theme-color" content="#05050f">
+  <title>🐱 Gatitos · Yejidá Astro</title>
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/fondo-vivo.css">
+  <link rel="stylesheet" href="style/hub.css">
+  <link rel="stylesheet" href="style/niveles.css">
+</head>
+<body>
+
+  <header id="header"></header>
+
+  <main>
+
+    <section class="niveles-hero">
+      <p class="hero-kicker">🐱 Causa Yejidá 🐱</p>
+      <h1 class="hero-titulo">Cada donación <span class="acento">alimenta un gatito</span></h1>
+      <p class="hero-sub">
+        El 100% de lo recaudado va directo a comida, vacunas y esterilización de gatos callejeros.
+        Aquí ves exactamente a dónde va cada peso.
+      </p>
+    </section>
+
+    <!-- Contadores -->
+    <section class="causa">
+      <div class="causa-card">
+        <div class="causa-stats">
+          <div><strong id="stat-recaudado">$0</strong><span>recaudados este mes</span></div>
+          <div><strong id="stat-gatitos">0</strong><span>gatitos alimentados</span></div>
+          <div><strong id="stat-padrinos">0</strong><span>padrinos activos</span></div>
+        </div>
+        <div class="meta-wrap">
+          <div class="meta-barra"><div class="meta-fill" id="metaFill"></div></div>
+          <p class="meta-texto" id="metaTexto">Meta del mes: $2,000 MXN</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equivalencias -->
+    <section class="unico">
+      <h2>¿Qué compra tu donación?</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>$10 → 1 sobre</h3>
+          <p>Comida húmeda premium para 1 gatito por 1 día.</p>
+        </article>
+        <article class="card">
+          <h3>$20 → 2 sobres + agua</h3>
+          <p>Comida húmeda + agua limpia para 1 gatito.</p>
+        </article>
+        <article class="card">
+          <h3>$50 → 1 día completo</h3>
+          <p>Comida + arena + snacks para 1 gatito rescatado.</p>
+        </article>
+        <article class="card">
+          <h3>$100 → 1 vacuna</h3>
+          <p>Vacuna triple felina para 1 gatito.</p>
+        </article>
+        <article class="card">
+          <h3>$200 → 1 semana</h3>
+          <p>Alimentación completa de 1 gatito por 7 días.</p>
+        </article>
+        <article class="card">
+          <h3>$500 → Esterilización</h3>
+          <p>Esterilización completa + recuperación.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="gatitos-galeria">
+      <h2>Los gatitos que ayudas 🐱</h2>
+      <p class="sub">Cada uno tiene nombre, historia y necesita comida.</p>
+      <div class="gatitos-grid">
+        <article class="gatito-card">
+          <div class="gatito-foto" style="background: linear-gradient(135deg, #ffb703, #fb8500);">🐱</div>
+          <h3>Luna</h3>
+          <p>Rescatada en enero. Le encanta dormir al sol.</p>
+          <span class="gatito-estado">Alimentada ✅</span>
+        </article>
+        <article class="gatito-card">
+          <div class="gatito-foto" style="background: linear-gradient(135deg, #7b5cff, #c9a227);">🐈</div>
+          <h3>Mercurio</h3>
+          <p>Encontrado en un mercado. Muy juguetón.</p>
+          <span class="gatito-estado">Alimentado ✅</span>
+        </article>
+        <article class="gatito-card">
+          <div class="gatito-foto" style="background: linear-gradient(135deg, #e63946, #ffb703);">🐈‍⬛</div>
+          <h3>Saturno</h3>
+          <p>El más viejo del grupo. Sabio y tranquilo.</p>
+          <span class="gatito-estado">Alimentado ✅</span>
+        </article>
+        <article class="gatito-card">
+          <div class="gatito-foto" style="background: linear-gradient(135deg, #90be6d, #c9a227);">🐱</div>
+          <h3>Venus</h3>
+          <p>Rescatada con sus 3 gatitos. Ahora todos comen.</p>
+          <span class="gatito-estado">Alimentada ✅</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Transparencia -->
+    <section class="transparencia">
+      <h2>🔍 Transparencia total</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>📸 Fotos antes/después</h3>
+          <p>Publicamos cada rescate y su evolución.</p>
+        </article>
+        <article class="card">
+          <h3>🧾 Recibos</h3>
+          <p>Cada compra de comida y vet tiene su comprobante.</p>
+        </article>
+        <article class="card">
+          <h3>📊 Reporte mensual</h3>
+          <p>Cuánto entró, cuánto salió, cuántos gatitos se alimentaron.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="donacion-libre">
+      <h2>Ayuda ahora 🐱</h2>
+      <p>Cada peso cuenta. Sin mínimo, sin condiciones.</p>
+      <div class="donacion-montos">
+        <a class="btn btn-donar-libre" data-monto="10" href="#">$10</a>
+        <a class="btn btn-donar-libre" data-monto="20" href="#">$20</a>
+        <a class="btn btn-donar-libre" data-monto="50" href="#">$50</a>
+        <a class="btn btn-donar-libre" data-monto="100" href="#">$100</a>
+        <a class="btn btn-donar-libre" data-monto="200" href="#">$200</a>
+      </div>
+      <p style="text-align:center; margin-top: 2rem;">
+        <a href="muro-padrinos.html" class="btn btn-secundario">Ver muro de padrinos</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script type="module">
+    import { iniciarFondoVivo } from "./js/visual/fondo-vivo.js";
+    import "./js/shared.js";
+    import { abrirPagoLibre } from "./js/niveles/mercadopago.js";
+
+    iniciarFondoVivo();
+
+    // Meta mensual
+    const recaudado = Number(localStorage.getItem("yejida_recaudado") || "0");
+    const meta = 2000;
+    const pct = Math.min(100, (recaudado / meta) * 100);
+    const fill = document.getElementById("metaFill");
+    const texto = document.getElementById("metaTexto");
+    if (fill) fill.style.width = pct + "%";
+    if (texto) texto.textContent = `Meta del mes: $${recaudado} de $${meta} MXN (${pct.toFixed(0)}%)`;
+
+    document.querySelectorAll(".btn-donar-libre").forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        abrirPagoLibre(parseInt(btn.dataset.monto));
+      });
+    });
+  </script>
+</body>
+</html>
