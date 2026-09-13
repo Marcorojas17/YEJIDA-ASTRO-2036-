@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Bloquea archivos internos
+Disallow: /js/
+Disallow: /tests/
+Disallow: /scripts/
+Disallow: /.github/
+Disallow: /docs/
+
+# Sitemap
+Sitemap: https://marcorojas17.github.io/YEJIDA-ASTRO-2036/sitemap.xml
