@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#05050f">
+  <title>✦ Mi Dashboard · Yejidá Astro</title>
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/fondo-vivo.css">
+  <link rel="stylesheet" href="style/hub.css">
+  <link rel="stylesheet" href="style/niveles.css">
+  <link rel="stylesheet" href="style/dashboard.css">
+</head>
+<body>
+
+  <header id="header"></header>
+
+  <main>
+
+    <section class="niveles-hero">
+      <p class="hero-kicker">✦ Tu viaje estelar ✦</p>
+      <h1 class="hero-titulo">Mi <span class="acento">Dashboard</span></h1>
+      <p class="hero-sub" id="saludo">Bienvenido de vuelta ✦</p>
+    </section>
+
+    <section class="dashboard">
+
+      <!-- Nivel actual -->
+      <div class="dash-card destacado">
+        <h2>Tu nivel actual</h2>
+        <div class="nivel-badge" id="nivelBadge">Nivel 0 · Semilla</div>
+        <div class="progreso-wrap">
+          <div class="progreso-barra" id="dashProgreso"></div>
+        </div>
+        <p class="progreso-texto" id="dashTexto">Empieza tu camino desde $10</p>
+        <a href="niveles.html" class="btn btn-primario">Avanzar 🐱</a>
+      </div>
+
+      <!-- Stats -->
+      <div class="dash-grid">
+        <div class="dash-card">
+          <h3>🐱 Gatitos alimentados</h3>
+          <span class="dash-num" id="dashGatitos">0</span>
+        </div>
+        <div class="dash-card">
+          <h3>✨ Huellitas estelares</h3>
+          <span class="dash-num" id="dashPuntos">0</span>
+        </div>
+        <div class="dash-card">
+          <h3>🔥 Racha diaria</h3>
+          <span class="dash-num" id="dashRacha">0</span>
+        </div>
+        <div class="dash-card">
+          <h3>🏆 Logros</h3>
+          <span class="dash-num" id="dashLogros">0</span>
+        </div>
+      </div>
+
+      <!-- Logros -->
+      <div class="dash-card">
+        <h2>🏆 Tus logros</h2>
+        <div class="logros-grid" id="logrosGrid">
+          <div class="logro" data-logro="primer-paso">
+            <span>🌱</span>
+            <p>Primer paso</p>
+          </div>
+          <div class="logro" data-logro="padrino">
+            <span>🐱</span>
+            <p>Padrino</p>
+          </div>
+          <div class="logro" data-logro="estudioso">
+            <span>📖</span>
+            <p>Estudioso</p>
+          </div>
+          <div class="logro" data-logro="racha-7">
+            <span>🔥</span>
+            <p>Racha 7 días</p>
+          </div>
+          <div class="logro" data-logro="explorador">
+            <span>🌌</span>
+            <p>Explorador</p>
+          </div>
+          <div class="logro" data-logro="maestro">
+            <span>👑</span>
+            <p>Maestro</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Acciones -->
+      <div class="dash-card">
+        <h2>✦ Continúa tu viaje</h2>
+        <div class="dash-acciones">
+          <a href="herramientas/carta-natal.html" class="btn btn-secundario">🌙 Carta natal</a>
+          <a href="herramientas/transitos.html" class="btn btn-secundario">☄️ Tránsitos</a>
+          <a href="extras/angel-regente.html" class="btn btn-secundario">👼 Ángel</a>
+          <a href="extras/piedra.html" class="btn btn-secundario">💎 Piedra</a>
+          <a href="visual/rueda-zodiacal.html" class="btn btn-secundario">🎡 Rueda</a>
+          <a href="muro-padrinos.html" class="btn btn-secundario">🏅 Muro</a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script type="module">
+    import { iniciarFondoVivo } from "./js/visual/fondo-vivo.js";
+    import "./js/shared.js";
+    import { getNivelActual } from "./js/niveles/tracker.js";
+
+    iniciarFondoVivo();
+
+    const nivel = getNivelActual();
+    const nombres = ["Semilla", "Raíz", "Luna Creciente", "Mercurio", "Venus", "Sol", "Marte", "Júpiter", "Saturno Maestro"];
+    const nivelBadge = document.getElementById("nivelBadge");
+    const dashProgreso = document.getElementById("dashProgreso");
+    const dashTexto = document.getElementById("dashTexto");
+
+    if (nivelBadge) nivelBadge.textContent = `Nivel ${nivel} · ${nombres[nivel]}`;
+    if (dashProgreso) dashProgreso.style.width = (nivel / 9 * 100) + "%";
+    if (dashTexto) dashTexto.textContent = nivel === 0 ? "Empieza tu camino desde $10" : `Vas en nivel ${nivel} de 9`;
+
+    // Stats locales
+    document.getElementById("dashGatitos").textContent = localStorage.getItem("yejida_gatitos") || "0";
+    document.getElementById("dashPuntos").textContent  = localStorage.getItem("yejida_puntos")  || "0";
+    document.getElementById("dashRacha").textContent   = localStorage.getItem("yejida_racha")   || "0";
+    document.getElementById("dashLogros").textContent  = nivel;
+  </script>
+</body>
+</html>
