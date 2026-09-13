@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#05050f">
+  <title>🏅 Muro de Padrinos · Yejidá Astro</title>
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/fondo-vivo.css">
+  <link rel="stylesheet" href="style/hub.css">
+</head>
+<body>
+
+  <header id="header"></header>
+
+  <main>
+
+    <section class="niveles-hero">
+      <p class="hero-kicker">🐱 Gracias a ellos 🐱</p>
+      <h1 class="hero-titulo">Muro de <span class="acento">Padrinos</span></h1>
+      <p class="hero-sub">Personas que ya alimentaron gatitos con Yejidá.</p>
+    </section>
+
+    <section class="unico">
+      <div class="padrinos-grid" id="padrinosGrid">
+        <!-- Se llena con JS -->
+      </div>
+
+      <p style="text-align:center; margin-top: 3rem; color: var(--texto-2);">
+        ¿Quieres aparecer aquí? <a href="niveles.html" style="color: var(--gatito);">Dona desde $10 🐱</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script type="module">
+    import { iniciarFondoVivo } from "./js/visual/fondo-vivo.js";
+    import "./js/shared.js";
+
+    iniciarFondoVivo();
+
+    // Padrinos iniciales (edita este array o carga desde datos/padrinos.json)
+    const padrinos = [
+      { nombre: "Anónimo", nivel: 3, mensaje: "Por los gatitos 🐱" },
+      { nombre: "Anónimo", nivel: 5, mensaje: "Yejidá me cambió" },
+      { nombre: "Anónimo", nivel: 1, mensaje: "Primer paso" },
+    ];
+
+    const grid = document.getElementById("padrinosGrid");
+    if (grid) {
+      grid.innerHTML = padrinos.map(p => `
+        <article class="padrino-card">
+          <span class="padrino-nivel">Nivel ${p.nivel}</span>
+          <h3>${p.nombre}</h3>
+          <p>"${p.mensaje}"</p>
+          <span class="padrino-gatito">🐱 Alimentó gatitos</span>
+        </article>
+      `).join("");
+    }
+  </script>
+</body>
+</html>
