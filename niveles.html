@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Desbloquea los 9 niveles de Yejidá desde $10 MXN. Cada donación alimenta gatitos callejeros.">
+  <meta name="theme-color" content="#05050f">
+  <title>🔓 Niveles · Yejidá Astro</title>
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/fondo-vivo.css">
+  <link rel="stylesheet" href="style/hub.css">
+  <link rel="stylesheet" href="style/niveles.css">
+</head>
+<body>
+
+  <header id="header"></header>
+
+  <main>
+
+    <section class="niveles-hero">
+      <p class="hero-kicker">✦ Sistema Yejidá ✦</p>
+      <h1 class="hero-titulo">Desbloquea tu <span class="acento">camino estelar</span></h1>
+      <p class="hero-sub">
+        9 niveles. Desde $10 MXN. Cada uno alimenta gatitos y te abre una rama nueva.
+      </p>
+      <div class="progreso-wrap">
+        <div class="progreso-barra" role="progressbar" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0" id="progresoBarra"></div>
+        <p class="progreso-texto" id="progresoTexto">Nivel 0 de 9 · Empieza gratis</p>
+      </div>
+    </section>
+
+    <section class="niveles">
+      <div class="niveles-grid" id="nivelesGrid">
+
+        <!-- Nivel 1 -->
+        <article class="nivel-card" data-nivel="1">
+          <span class="nivel-num">Nivel 1</span>
+          <h3>🌱 Semilla Estelar</h3>
+          <p class="nivel-desc">Tu letra hebrea + ángel regente.</p>
+          <p class="nivel-gatito">🐱 1 sobre de comida</p>
+          <span class="nivel-precio">$10</span>
+          <a class="btn btn-donar" data-nivel="1" href="#">Donar y desbloquear</a>
+        </article>
+
+        <!-- Nivel 2 -->
+        <article class="nivel-card" data-nivel="2">
+          <span class="nivel-num">Nivel 2</span>
+          <h3>🌙 Raíz Lunar</h3>
+          <p class="nivel-desc">Tu piedra + signo lunar.</p>
+          <p class="nivel-gatito">🐱 1 sobre + agua limpia</p>
+          <span class="nivel-precio">$15</span>
+          <a class="btn btn-donar" data-nivel="2" href="#">Donar y desbloquear</a>
+        </article>
+
+        <!-- Nivel 3 -->
+        <article class="nivel-card" data-nivel="3">
+          <span class="nivel-num">Nivel 3</span>
+          <h3>☀️ Luna Creciente</h3>
+          <p class="nivel-desc">Carta natal básica completa.</p>
+          <p class="nivel-gatito">🐱 1 sobre premium</p>
+          <span class="nivel-precio">$20</span>
+          <a class="btn btn-donar" data-nivel="3" href="#">Donar y desbloquear</a>
+        </article>
+
+        <!-- Nivel 4 -->
+        <article class="nivel-card" data-nivel="4">
+          <span class="nivel-num">Nivel 4</span>
+          <h3>💫 Mercurio Místico</h3>
+          <p class="nivel-desc">Mandala personal + numerología.</p>
+          <p class="nivel-gatito">🐱 2 sobres</p>
+          <span class="nivel-precio">$25</span>
+          <a class="btn btn-donar" data-nivel="4" href="#">Donar y desbloquear</a>
+        </article>
+
+        <!-- Nivel 5 -->
+        <article class="nivel-card" data-nivel="5">
+          <span class="nivel-num">Nivel 5</span>
+          <h3>💞 Venus Felina</h3>
+          <p class="nivel-desc">Comparador + sinastría con tu gato.</p>
+          <p class="nivel-gatito">🐱 1 día de comida</p>
+          <span class="nivel-precio">$30</span>
+          <a class="btn btn-donar" data-nivel="5" href="#">Donar y desbloquear</a>
+        </article>
+
+        <!-- Nivel 6 -->
+        <article class="nivel-card" data-nivel="6">
+          <span class="nivel-num">Nivel 6</span>
+          <h3>🌟 Sol Radiante</h3>
+          <p class="nivel-desc">Reloj cabalístico + tránsitos.</p>
+          <p class="nivel-gatito">🐱 1 día + snacks</p>
+          <span class="nivel-precio">$35</span>
+          <a class="btn btn-donar" data-nivel="6" href="#">Donar y desbloquear</a>
+        </article>
+
+        <!-- Nivel 7 -->
+        <article class="nivel-card" data-nivel="7">
+          <span class="nivel-num">Nivel 7</span>
+          <h3>🔥 Marte Guerrero</h3>
+          <p class="nivel-desc">Progresiones 1 año.</p>
+          <p class="nivel-gatito">🐱 2 días de comida</p>
+          <span class="nivel-precio">$40</span>
+          <a class="btn btn-donar" data-nivel="7" href="#">Donar y desbloquear</a>
+        </article>
+
+        <!-- Nivel 8 -->
+        <article class="nivel-card" data-nivel="8">
+          <span class="nivel-num">Nivel 8</span>
+          <h3>💎 Júpiter Sabio</h3>
+          <p class="nivel-desc">Informe PDF 40 páginas.</p>
+          <p class="nivel-gatito">🐱 2 días + arena</p>
+          <span class="nivel-precio">$45</span>
+          <a class="btn btn-donar" data-nivel="8" href="#">Donar y desbloquear</a>
+        </article>
+
+        <!-- Nivel 9 -->
+        <article class="nivel-card destacado" data-nivel="9">
+          <span class="nivel-num">Nivel 9</span>
+          <h3>👑 Saturno Maestro</h3>
+          <p class="nivel-desc">Carta completa + sinastría total.</p>
+          <p class="nivel-gatito">🐱 3 días completos</p>
+          <span class="nivel-precio">$50</span>
+          <a class="btn btn-donar" data-nivel="9" href="#">Donar y desbloquear</a>
+        </article>
+
+      </div>
+
+      <!-- Bundles -->
+      <h2 class="bundles-titulo">✦ Packs con descuento ✦</h2>
+      <div class="bundles-grid">
+        <div class="bundle">
+          <h3>Pack Iniciado</h3>
+          <p>Niveles 1+2+3</p>
+          <span class="bundle-precio">$25</span>
+          <p class="bundle-ahorro">Ahorras $20</p>
+          <a class="btn btn-donar-bundle" data-bundle="iniciado" href="#">Comprar</a>
+        </div>
+        <div class="bundle">
+          <h3>Pack Místico</h3>
+          <p>Niveles 4+5+6</p>
+          <span class="bundle-precio">$50</span>
+          <p class="bundle-ahorro">Ahorras $40</p>
+          <a class="btn btn-donar-bundle" data-bundle="mistico" href="#">Comprar</a>
+        </div>
+        <div class="bundle">
+          <h3>Pack Maestro</h3>
+          <p>Niveles 7+8+9</p>
+          <span class="bundle-precio">$90</span>
+          <p class="bundle-ahorro">Ahorras $45</p>
+          <a class="btn btn-donar-bundle" data-bundle="maestro" href="#">Comprar</a>
+        </div>
+        <div class="bundle destacado">
+          <h3>Pack Total</h3>
+          <p>Los 9 niveles</p>
+          <span class="bundle-precio">$150</span>
+          <p class="bundle-ahorro">Ahorras $105</p>
+          <a class="btn btn-donar-bundle" data-bundle="total" href="#">Comprar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA donación libre -->
+    <section class="donacion-libre">
+      <h2>O dona lo que puedas 🐱</h2>
+      <p>Cada peso alimenta gatitos. Sin niveles, sin condiciones.</p>
+      <div class="donacion-montos">
+        <a class="btn btn-donar-libre" data-monto="10" href="#">$10</a>
+        <a class="btn btn-donar-libre" data-monto="20" href="#">$20</a>
+        <a class="btn btn-donar-libre" data-monto="50" href="#">$50</a>
+        <a class="btn btn-donar-libre" data-monto="100" href="#">$100</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script type="module">
+    import { iniciarFondoVivo } from "./js/visual/fondo-vivo.js";
+    import "./js/shared.js";
+    import { checkPago, getNivelActual, pintarNiveles } from "./js/niveles/tracker.js";
+    import { abrirPagoNivel, abrirPagoBundle, abrirPagoLibre } from "./js/niveles/mercadopago.js";
+
+    iniciarFondoVivo();
+    checkPago();
+    pintarNiveles();
+
+    document.querySelectorAll(".btn-donar").forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        abrirPagoNivel(parseInt(btn.dataset.nivel));
+      });
+    });
+
+    document.querySelectorAll(".btn-donar-bundle").forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        abrirPagoBundle(btn.dataset.bundle);
+      });
+    });
+
+    document.querySelectorAll(".btn-donar-libre").forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        abrirPagoLibre(parseInt(btn.dataset.monto));
+      });
+    });
+  </script>
+</body>
+</html>
