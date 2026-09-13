@@ -1,0 +1,188 @@
+/* ============================================
+   DASHBOARD — Panel personal del usuario
+   ============================================ */
+
+.dashboard {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dash-card {
+  background: rgba(18, 18, 42, 0.65);
+  border: 1px solid var(--borde);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(14px);
+  transition: all 0.35s;
+}
+
+.dash-card:hover {
+  border-color: rgba(201, 162, 39, 0.5);
+}
+
+.dash-card.destacado {
+  background: linear-gradient(135deg, rgba(18, 18, 42, 0.7), rgba(201, 162, 39, 0.08));
+  border-color: rgba(201, 162, 39, 0.4);
+}
+
+.dash-card h2 {
+  font-family: var(--fuente-t);
+  font-size: 1.6rem;
+  color: #c9a227;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.nivel-badge {
+  display: block;
+  text-align: center;
+  font-family: var(--fuente-t);
+  font-size: 2.5rem;
+  color: #ffb703;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 30px rgba(255, 183, 3, 0.5);
+}
+
+.dash-card .progreso-wrap {
+  margin: 1.5rem 0;
+}
+
+.dash-card .progreso-texto {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.dash-card .btn-primario {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 260px;
+}
+
+/* Grid de stats */
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+}
+
+.dash-grid .dash-card {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.dash-grid .dash-card h3 {
+  font-size: 0.85rem;
+  font-family: var(--fuente);
+  color: var(--texto-2);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.dash-num {
+  display: block;
+  font-family: var(--fuente-t);
+  font-size: 3rem;
+  color: #ffb703;
+  text-shadow: 0 0 25px rgba(255, 183, 3, 0.5);
+  line-height: 1;
+}
+
+/* Logros */
+.logros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.logro {
+  padding: 1.25rem 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(201, 162, 39, 0.15);
+  border-radius: 16px;
+  text-align: center;
+  opacity: 0.35;
+  filter: grayscale(100%);
+  transition: all 0.35s;
+  cursor: pointer;
+}
+
+.logro.activo {
+  opacity: 1;
+  filter: grayscale(0%);
+  border-color: #c9a227;
+  background: linear-gradient(135deg, rgba(201, 162, 39, 0.15), rgba(255, 183, 3, 0.08));
+  box-shadow: 0 0 25px rgba(201, 162, 39, 0.3);
+}
+
+.logro:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+.logro span {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.logro p {
+  font-size: 0.8rem;
+  color: var(--texto-2);
+  font-weight: 500;
+}
+
+.logro.activo p {
+  color: #ffb703;
+}
+
+/* Acciones */
+.dash-acciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.dash-acciones .btn-secundario {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Próximamente con emojis */
+.coming-dash {
+  text-align: center;
+  padding: 2rem;
+  border: 1px dashed rgba(123, 92, 255, 0.4);
+  border-radius: 20px;
+  background: rgba(123, 92, 255, 0.05);
+}
+
+.coming-dash h3 {
+  font-family: var(--fuente-t);
+  font-size: 1.4rem;
+  color: #b8a6ff;
+  margin-bottom: 1rem;
+}
+
+.coming-dash ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.coming-dash li {
+  padding: 0.5rem 1rem;
+  background: rgba(123, 92, 255, 0.12);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--texto-2);
+}
