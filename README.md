@@ -31,3 +31,88 @@ El 100% de lo recaudado va directo a comida, vacunas y esterilización de gatos 
 ---
 
 ## 🌐 URL Pública
+
+
+
+---
+
+## 📖 Estructura del Proyecto
+
+| Carpeta | Contenido |
+|---|---|
+| `portales/` | 21 portales temáticos (Sefirot, mundos, constelaciones, cosmología) |
+| `herramientas/` | 15 calculadoras interactivas |
+| `visual/` | 12 visualizaciones SVG/Canvas |
+| `practica/` | 12 prácticas guiadas |
+| `aprender/` | 10 cursos progresivos |
+| `comunidad/` | Foro, wiki, podcast, API |
+| `juegos/` | 10 juegos interactivos |
+| `extras/` | 20 extras personalizados |
+| `js/` | Motor + sistema Yejidá |
+| `datos/` | JSON de datos astronómicos reales |
+| `gatitos.html` | La causa 🐱 |
+
+---
+
+## 🎯 Características
+
+- ✅ 88 constelaciones IAU completas
+- ✅ 13 signos reales (incluye Ofiuco y Cetus)
+- ✅ Catálogo de estrellas Hipparcos
+- ✅ Objetos Messier + NGC + IC
+- ✅ Exoplanetas NASA
+- ✅ 41 ramas del Sistema Yejidá (A-Z, AA-AO)
+- ✅ 21 portales de sabiduría
+- ✅ Causa de gatitos con transparencia total 🐱
+
+---
+
+## 🛡️ Estándares
+
+- 🔒 OWASP ASVS L2 — Seguridad web
+- 💎 ISO/IEC 25010 — Calidad de software
+- ♿ WCAG 2.2 AA — Accesibilidad
+- 🔐 AES-256-GCM — Cifrado local
+- 🇲🇽 LFPDPPP — Protección de datos México
+
+---
+
+## 🚀 Características Técnicas
+
+- ✅ 100% local — Sin servidores, sin tracking
+- ✅ PWA instalable — Modo offline
+- ✅ Sin dependencias externas — Vanilla JS + CSS
+- ✅ Responsive — Móvil, tablet, desktop
+- ✅ Accesible — Lector de pantalla, teclado
+- ✅ Geometría sagrada animada — Fondo vivo
+- ✅ localStorage cifrado
+
+---
+
+## 🤝 Contribuir
+
+Ver [CONTRIBUTING.md](CONTRIBUTING.md).
+
+**Formas de contribuir:**
+- 💻 Código (HTML, CSS, JS)
+- 📖 Contenido (artículos, glosario)
+- 🌍 Traducciones (inglés, hebreo, portugués)
+- 🎨 Diseño (iconos, ilustraciones)
+- 🐱 Alimentar gatitos
+
+---
+
+## 📄 Licencia
+
+MIT + CC BY-SA 4.0. Ver [LICENSE](LICENSE).
+
+---
+
+## 📞 Contacto
+
+- GitHub: [@Marcorojas17](https://github.com/Marcorojas17)
+- Proyecto: `YEJIDA-ASTRO-2036`
+
+---
+
+**✦ Yejidá · Unidad · Amor · Gatitos 🐱 ✦**
