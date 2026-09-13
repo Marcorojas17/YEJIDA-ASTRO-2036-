@@ -1,0 +1,48 @@
+{
+  "name": "Yejidá Astro Avanzado 2036",
+  "short_name": "Yejidá",
+  "description": "Astrología cabalística real, 88 constelaciones y sistema propio de 41 ramas. Cada donación alimenta gatitos callejeros.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#05050f",
+  "theme_color": "#c9a227",
+  "lang": "es-MX",
+  "dir": "ltr",
+  "categories": ["education", "lifestyle", "spirituality"],
+  "icons": [
+    {
+      "src": "assets/iconos/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/iconos/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Carta natal",
+      "short_name": "Carta",
+      "url": "./herramientas/carta-natal.html",
+      "icons": [{ "src": "assets/iconos/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Gatitos",
+      "short_name": "Gatitos",
+      "url": "./gatitos.html",
+      "icons": [{ "src": "assets/iconos/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Niveles",
+      "short_name": "Niveles",
+      "url": "./niveles.html",
+      "icons": [{ "src": "assets/iconos/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
