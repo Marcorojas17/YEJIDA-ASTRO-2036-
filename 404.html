@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#05050f">
+  <title>✦ 404 · Perdido en el multiverso ✦</title>
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/fondo-vivo.css">
+  <link rel="stylesheet" href="style/hub.css">
+</head>
+<body>
+
+  <header id="header"></header>
+
+  <main>
+    <section class="niveles-hero" style="min-height: 70vh;">
+      <p class="hero-kicker">✦ Error 404 ✦</p>
+      <h1 class="hero-titulo">Te perdiste en el <span class="acento">multiverso</span></h1>
+      <p class="hero-sub">
+        Esta página no existe en esta dimensión. Pero los gatitos sí te esperan.
+      </p>
+      <div class="hero-botones">
+        <a href="index.html" class="btn btn-primario">✦ Volver al inicio</a>
+        <a href="gatitos.html" class="btn btn-secundario">🐱 Ver gatitos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script type="module">
+    import { iniciarFondoVivo } from "./js/visual/fondo-vivo.js";
+    import "./js/shared.js";
+    iniciarFondoVivo();
+  </script>
+</body>
+</html>
